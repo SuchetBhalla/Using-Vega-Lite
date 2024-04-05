@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <title>ELL 824</title>
+    <meta charset="utf-8" />
+
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.27.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.24.0"></script>
+
+    <style type = "text/css">
+      #donut {display: flex; justify-content: center;}
+      #corr {display: flex; justify-content: center;}
+      #streamGraph {display: flex; justify-content: center;}
+      #hist {display: flex; justify-content: center;}
+      #concat {display: flex; justify-content: center;}
+    </style>
+  </head>
+
+  <body>
+    <h2 align = "center">Assignment 3: Visualizing Tables using Vega-Lite</h2>
+    <h3 align = "center">by Suchet Bhalla, 2022EET2088</h3>
+
+    <h3 align= "center">1. Donut Chart showing <i>Rep</i> & <i>Total</i></h3>
+    <div id="donut"></div> <br>
+
+    <h3 align= "center">2. Correlation between <i>Units</i> & <i>Units-Cost</i> with a superimposed rectangular-brush</h3>
+    <div id="corr"></div> <br>
+
+    <h3 align= "center">3. StreamGraph showing how the <i>Total</i> varied over time (for each <i>Item</i>)</h3>
+    <div id="streamGraph"></div> <br>
+
+    <h3 align= "center">4. Histogram of the <i>Units</i> with an overlay of global-mean</h3>
+    <div id="hist"></div> <br>
+
+    <h3 align= "center">5. Concatenated View</h3>
+    <div id="concat"></div>
+
+    <script src= "script.js"></script>
+    </body>
+</html>
